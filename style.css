@@ -68,6 +68,7 @@ h1 {
   margin: 10px 0;
   border-radius: 10px;
   font-size: 1.5em;
+  
 }
 .block {
   background-color: black;
@@ -83,6 +84,7 @@ h1 {
 }
 .btnList {
   padding-top: 20px;
+  -webkit-animation-delay:2s;
 }
 .page2 {
   background: url("http://unsplash.com/photos/9EM7s13H2I0/download?force=true");
