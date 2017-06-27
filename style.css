@@ -1,8 +1,4 @@
-@font-face {
-  font-family: Lobster;
-  src: url('fonts/lr.ttf');
-        
-}
+
 #LinkedinIcon {
   color: rgb(0, 127, 237);
 }
@@ -34,7 +30,7 @@
   color: darkgreen;
 }
 .nav-pills {
-  font-family: "Lobster" serif;
+  font-family: "Roboto" serif;
   font-size: 1.7em;
   background-color: black;
   margin-bottom: 10%;
@@ -44,7 +40,7 @@ h1 {
   margin-top: 0px;
 }
 body {
-  font-family:Lobster;
+  font-family:Roboto;
   
   color: white;
 }
@@ -53,6 +49,7 @@ body {
   background-size: cover;
   height: 600px;
   padding-top: 100px;
+  font-family:Lobster;
 }
 h1 {
   padding: 0;
@@ -116,26 +113,17 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.page5 {
-  background: url("http://unsplash.com/photos/bmnuRawqdsI/download?force=true");
-  background-size: cover;
-  height: 400px;
 
-  padding-top: 5%;
-}
-.footer {
-  background-color: black;
-}
-.footer p {
-  font-size: 15px;
-}
+
 .paddingBTN {
   width: 200px;
   margin-bottom: 25px;
 }
 
 .sizeo {
-  font-size: 25px;
+  font-size: 15px;
+  letter-spacing:1px;
+  margin-left:15px;
 }
 .hel{
   font-family:Helvetica;
@@ -158,5 +146,40 @@ p {
     margin-bottom:20px;
     
     
+}
+.page5{
+    background-color:#96bcdc;
+   
+  height: 600px;
+  padding-top: 5%;
+  padding-right: 5%;
+  color:white;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar {min-height:30px !important;}
+footer {
+  color: White;
+  background-color: #8ea0ac;
+  padding: 20px 0px 10px 0px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer a:hover {
+  color: #eb99ce;
+}
+.row .btn {
+  padding: 5px 20px 5px 20px;
+  background: #8ea0ac;
+}
+
+.row .btn:hover {
+  background: #337ab7;
+  color: White; 
 }
 
