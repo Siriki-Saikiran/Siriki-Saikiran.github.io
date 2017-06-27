@@ -81,13 +81,14 @@ h1 {
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 10px;
+  -webkit-animation-delay:2s;
 }
 .btnList {
   padding-top: 20px;
   -webkit-animation-delay:2s;
 }
 .page2 {
-  background: url("http://unsplash.com/photos/9EM7s13H2I0/download?force=true");
+  background: url("http://unsplash.com/photos/1ak3Z7ZmtQA/download?force=true");
   background-size: cover;
   height: 600px;
   padding-top: 5%;
@@ -96,7 +97,7 @@ h1 {
 }
 
 p {
-  font-size: 1.7em;
+  line-height: 200%;
 }
 .me {
   height: 400px;
@@ -135,5 +136,12 @@ p {
 
 .sizeo {
   font-size: 25px;
+}
+.hel{
+  font-family:Helvetica;
+  animation-iteration-count: 2;
+}
+#pp{
+  font-family:"Passion One";
 }
 
