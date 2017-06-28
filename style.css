@@ -150,9 +150,7 @@ p {
 .page5{
     background-color:#96bcdc;
    
-  height: 600px;
-  padding-top: 5%;
-  padding-right: 5%;
+  height: 100px;
   color:white;
 }
 .navbar-nav > li > a, .navbar-brand {
@@ -181,5 +179,44 @@ footer a:hover {
 .row .btn:hover {
   background: #337ab7;
   color: White; 
+}
+.cold-md-4{
+    display:inline-block;
+}
+.c{
+    animation-delay:0.5s;
+    animation-duration:1s;
+}
+.cpp{
+    animation-delay:0.75s;
+    animation-duration:1s;
+}
+.py{
+    animation-delay:1s;
+    animation-duration:1s;
+}
+.html{
+    animation-delay:1.25s;
+    animation-duration:1s;
+}
+.css{
+    animation-delay:1.5s;
+    animation-duration:1s;
+}
+.js{
+    animation-delay:1.75s;
+    animation-duration:1s;
+}
+.jq{
+    animation-delay:2s;
+    animation-duration:1s;
+}
+.bs{
+    animation-delay:2.25s;
+    animation-duration:1s;
+}
+.git{
+    animation-delay:2.5s;
+    animation-duration:1s;
 }
 
