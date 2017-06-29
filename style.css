@@ -45,7 +45,7 @@ body {
   color: white;
 }
 .page1 {
-  background-image: url("http://unsplash.com/photos/DgtRKZOOE0w/download?force=true");
+  background-image: url("images/page1.jpg");
   background-size: cover;
   height: 600px;
   padding-top: 100px;
@@ -103,7 +103,7 @@ p {
   border-radius: 75%;
 }
 .page4 {
-  background: url("http://unsplash.com/photos/Y_YSuBfQCmI/download?force=true");
+  background: url("images/page4.jpg");
   background-size: cover;
 
   padding-top: 5%;
@@ -133,7 +133,7 @@ p {
   font-family:"Passion One";
 }
 .page3{
-    background-image:url("http://unsplash.com/photos/esCc1qx6TVw/download?force=true");
+    background-image:url("images/page3.jpg");
     background-size: cover;
   height: 700px;
   padding-top: 5%;
@@ -147,12 +147,7 @@ p {
     
     
 }
-.page5{
-    background-color:#96bcdc;
-   
-  height: 100px;
-  color:white;
-}
+
 .navbar-nav > li > a, .navbar-brand {
     padding-top:5px !important; padding-bottom:0 !important;
     height: 30px;
@@ -180,7 +175,7 @@ footer a:hover {
   background: #337ab7;
   color: White; 
 }
-.cold-md-4{
+.col-md-4{
     display:inline-block;
 }
 .c{
@@ -219,4 +214,5 @@ footer a:hover {
     animation-delay:2.5s;
     animation-duration:1s;
 }
+
 
