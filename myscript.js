@@ -21,7 +21,81 @@ $(document).ready(function(){
        
        
    });
+   /**
+var index = 1;
+
+function plusIndex(n){
+index = index + n;
+showImage(index);
+}
+
+showImage(1);
+
+function showImage(n){
+var i;
+var x = document.getElementsByClassName("slides");
+if(n > x.length){ index = 1};
+if(n < 1){ index = x.length};
+for(i=0;i<x.length;i++)
+{
+x[i].style.display = "none";
+}
+x[index-1].style.display = "block";
+}
+autoSlide();
+function autoSlide(){
+var i;
+var x = document.getElementsByClassName("slides");
+for(i=0;i<x.length;i++){
+x[i].style.display = "none";
+}
+index++;
+if(index > x.length){index = 1}
+x[index-1].style.display = "block";
+setTimeout(autoSlide,2000);
+
+}
+// setTimeout(autoSlide,2000);
+
+**/
+
+
+/**
+var count =0;
+showImage(1);
+
+function showImage(n){
+    
    
+    if(n>3){count=1};
+    if(n<0){count =4};
+   
+    for(var i=0; i<4;i++){
+        $(".slides").eq(i).css("display","none");
+    }
+     $(".slides").eq(count-1).css("display","block");
+    
+        
+        
+    }
+    function plusCount(){
+        count +=n;
+        showImage(count);
+        
+    
+}
+function minusCount(){
+    count -=n;
+    showImage(count);
+    
+    
+}
+ ("#bn1").click(plusCount());
+ ("#bn2").click(minusCount());
+ 
+ 
+ **/
+    
   
       
       
