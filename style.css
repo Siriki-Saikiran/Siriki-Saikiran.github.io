@@ -85,7 +85,7 @@ h1 {
   -webkit-animation-delay:2s;
 }
 .page2 {
-  background: url("http://unsplash.com/photos/1ak3Z7ZmtQA/download?force=true");
+  background: url("images/page2.jpg");
   background-size: cover;
   height: 600px;
   padding-top: 5%;
@@ -214,5 +214,38 @@ footer a:hover {
     animation-delay:2.5s;
     animation-duration:1s;
 }
-
-
+#container{
+    width:80%;
+    height:450px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    
+}
+#container >img {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+#container .bn{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:25px;
+    top:200px;
+    background-color:black;
+    color:white;
+    font-size:20px;
+    
+}
+#container> #bn2{
+    position:relative;
+    float:right;
+}
+#container >#bn1:hover{
+    box-shadow: 10px 0px 20px 0px black;
+}
+#container >#bn2:hover{
+    box-shadow: -10px 0px 20px 0px black;
+}
