@@ -140,6 +140,14 @@ p {
   padding-right: 5%;
   color:white;
 }
+.page5{
+    background-image:url("images/page5.jpg");
+    background-size: cover;
+  height: 700px;
+  padding-top: 5%;
+  padding-right: 5%;
+  color:white;
+}
 .img-size{
     width:75px;
     height:75px;
@@ -214,38 +222,53 @@ footer a:hover {
     animation-delay:2.5s;
     animation-duration:1s;
 }
-#container{
-    width:80%;
-    height:450px;
-    border: 1px solid black;
-    margin: 0 auto;
+.carousel-inner a {
+  margin: auto;
+}
+
+#carouselExampleIndicators {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-item img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selected img {
+	opacity:0.5;
+}
+
+.carousel-caption {
     position: relative;
-    
+    left: auto;
+    right: auto;
 }
-#container >img {
-    width:100%;
-    height:100%;
-    position:absolute;
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  border: none;
 }
-#container .bn{
-    position:absolute;
-    width:50px;
-    height:50px;
-    border:none;
-    border-radius:25px;
-    top:200px;
-    background-color:black;
-    color:white;
-    font-size:20px;
-    
+
+.carousel-control-prev {
+  margin-left: 60px;
 }
-#container> #bn2{
-    position:relative;
-    float:right;
+
+.carousel-control-next {
+  margin-right: 60px;
 }
-#container >#bn1:hover{
-    box-shadow: 10px 0px 20px 0px black;
+
+.carousel-control {
+  width: 0%;
 }
-#container >#bn2:hover{
-    box-shadow: -10px 0px 20px 0px black;
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: grey;
+  font-size: 40px;
 }
+
+
+/* Slideshow container */
+

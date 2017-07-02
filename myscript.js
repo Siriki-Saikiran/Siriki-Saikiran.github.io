@@ -1,7 +1,7 @@
 
+
 $(document).ready(function(){
-    
-   
+
    $(".page2").hover(function(){
        $(".hel").addClass("animated pulse");
        
@@ -21,6 +21,9 @@ $(document).ready(function(){
        
        
    });
+  $('.carousel').carousel({
+      interval: 3000
+    })
    /**
 var index = 1;
 
@@ -95,6 +98,7 @@ function minusCount(){
  
  
  **/
+ 
     
   
       
