@@ -90,29 +90,11 @@ function showImage(n){
 function minusCount(){
     count -=n;
     showImage(count);
-    
-    
+
 }
  ("#bn1").click(plusCount());
  ("#bn2").click(minusCount());
- 
- 
+
  **/
- 
-    
-  
-      
-      
-      
-      
-      
-  
-  
-    
-    
-    
-   
-    
-    
-    
+
 });

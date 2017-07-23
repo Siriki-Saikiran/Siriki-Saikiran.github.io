@@ -29,12 +29,7 @@
 #FCCIcon {
   color: darkgreen;
 }
-.nav-pills {
-  font-family: "Roboto" serif;
-  font-size: 1.7em;
-  background-color: black;
-  margin-bottom: 10%;
-}
+
 h1 {
   padding: 0;
   margin-top: 0px;
@@ -45,18 +40,70 @@ body {
   color: white;
 }
 .page1 {
+  
+  
   background-image: url("images/page1.jpg");
   background-size: cover;
-  height: 600px;
+  height: 100%;
   padding-top: 100px;
   font-family:Lobster;
+  min-height:600px;
 }
 h1 {
   padding: 0;
   margin-top: 0px;
   font-size: 5.0em;
 }
-.link-button {
+
+.card-block{
+  
+  background-color: black;
+  color:white;
+  opacity: .8;
+  padding: 10px;
+  width: 100%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  -webkit-animation-delay:2s;
+}
+.card{
+  
+  background-color: black;
+  color:white;
+  opacity: .8;
+  padding: 10px;
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+
+}
+.card-block p{
+  font-size:2em;
+}
+
+.btn-group {
+  padding-top: 5px;
+  margin: 5px;
+  -webkit-animation-delay:2s;
+}
+.flex-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+
+
+}
+.flex-container button {
+  
   color: white;
   background-color: black;
   text-align: center;
@@ -65,29 +112,19 @@ h1 {
   margin: 10px 0;
   border-radius: 10px;
   font-size: 1.5em;
+  margin:5px;
   
 }
-.block {
-  background-color: black;
-  color:white;
-  opacity: .8;
-  padding: 10px;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-radius: 10px;
-  -webkit-animation-delay:2s;
-}
-.btnList {
-  padding-top: 20px;
-  -webkit-animation-delay:2s;
+.link-button{
+color:white;
+font-family:Lobster;
+
 }
 .page2 {
   background: url("images/page2.jpg");
   background-size: cover;
-  height: 600px;
+  height:100%;
+  min-height: 600px;
   padding-top: 5%;
   padding-right: 5%;
   color:white;
@@ -135,7 +172,8 @@ p {
 .page3{
     background-image:url("images/page3.jpg");
     background-size: cover;
-  height: 700px;
+  height: 100%;
+  min-height:600px;
   padding-top: 5%;
   padding-right: 5%;
   color:white;
@@ -143,7 +181,8 @@ p {
 .page5{
     background-image:url("images/page5.jpg");
     background-size: cover;
-  height: 700px;
+  height:100%;
+  min-height: 700px;
   padding-top: 5%;
   padding-right: 5%;
   color:white;
