@@ -12,7 +12,7 @@ body {
 /*landing styling*/
 .landing {
   height: 100vh;
-  background-image: url("script.gif");
+  background-image: url("images/script.gif");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -85,7 +85,7 @@ body {
 
 .parallax {
   height: 80vh;
-  background-image: url("backcover.jpg");
+  background-image: url("images/main.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
