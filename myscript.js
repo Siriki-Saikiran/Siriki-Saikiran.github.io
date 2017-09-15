@@ -1,100 +1,70 @@
+$(document).ready(function() {
+	console.log('ready');
+	var $window = $(window);
 
 
-$(document).ready(function(){
+	//typed.js intro
+	var firstLineText = {
+		strings: ["", "Hi, I'm Saikiran"],
+		typeSpeed: 35
+	}
 
-   $(".page2").hover(function(){
-       $(".hel").addClass("animated pulse");
-       
-   });
-   $(".page3").hover(function(){
-       $(".c").addClass("animated bounceInDown").html("<h3 align='center'>C</h3><img class='img-responsive img-size' src='images/c.png' >");
-        $(".cpp").addClass("animated bounceInDown").html("<h3 align='center'>C++</h3><img class='img-responsive img-size'src='images/c++.png'>");
-         $(".py").addClass("animated bounceInDown").html("<h3 align='center'>Python</h3><img class='img-responsive img-size'src='images/python.png'>");
-          $(".html").addClass("animated bounceInDown").html("<h3 align='center'>HTML 5</h3><img class='img-responsive img-size'src='images/html.png'>");
-           $(".css").addClass("animated bounceInDown").html("<h3 align='center'>CSS 3</h3><img class='img-responsive img-size'src='images/css.png'>");
-            $(".js").addClass("animated bounceInDown").html("<h3 align='center'>Javascript</h3><img class='img-responsive img-size'src='images/javascript.png'>");
-            $(".jq").addClass("animated bounceInUp").html("<h3 align='center'>jQuery</h3><img class='img-responsive img-size'src='images/jquery.png'>");
-           $(".bs").addClass("animated bounceInUp").html("<h3 align='center'>Bootstrap</h3><img class='img-responsive img-size'src='images/bootstrap.png'>");
-            $(".git").addClass("animated bounceInUp").html("<h3 align='center'>Git</h3><img class='img-responsive img-size'src='images/git.png'>");
-       
-       
-       
-       
-   });
-  $('.carousel').carousel({
-      interval: 3000
-    })
-   /**
-var index = 1;
+	var secondLineText = {
+		strings: ["", "I script to solve everyday problems"],
+		typeSpeed: 35
+	}
 
-function plusIndex(n){
-index = index + n;
-showImage(index);
-}
+	var typeIntro = new Typed('#first-line', firstLineText);
+	setTimeout(function(){
+		var typeIntro = new Typed('#second-line', secondLineText);
+		setTimeout(function(){
+			$('#learn-more').css('opacity', 1);
+		}, 4200);
+	}, 1800);
 
-showImage(1);
+	// scrollspy
+	$("#learn-more").on('click', function(e) {
+   e.preventDefault();
+   var hash = this.hash;
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 600);
+	});
 
-function showImage(n){
-var i;
-var x = document.getElementsByClassName("slides");
-if(n > x.length){ index = 1};
-if(n < 1){ index = x.length};
-for(i=0;i<x.length;i++)
-{
-x[i].style.display = "none";
-}
-x[index-1].style.display = "block";
-}
-autoSlide();
-function autoSlide(){
-var i;
-var x = document.getElementsByClassName("slides");
-for(i=0;i<x.length;i++){
-x[i].style.display = "none";
-}
-index++;
-if(index > x.length){index = 1}
-x[index-1].style.display = "block";
-setTimeout(autoSlide,2000);
-
-}
-// setTimeout(autoSlide,2000);
-
-**/
+	// animate project containers
+	var $projectContainer = $('.project-container');
+	$window.scroll(function(){
+		$projectContainer.each(function(){
+			//check if scrollheight is past threshold, and div has not been transitioned
+			if($(document.body).scrollTop() + $(window).height()*1.2 > ($(this).position().top + $(this).height()) && !$(this).hasClass('transitioned')){ 
+				$(this).transition('scale');
+				$(this).addClass('transitioned');
+			}
+		});
+	});
 
 
-/**
-var count =0;
-showImage(1);
-
-function showImage(n){
-    
-   
-    if(n>3){count=1};
-    if(n<0){count =4};
-   
-    for(var i=0; i<4;i++){
-        $(".slides").eq(i).css("display","none");
-    }
-     $(".slides").eq(count-1).css("display","block");
-    
-        
-        
-    }
-    function plusCount(){
-        count +=n;
-        showImage(count);
-        
-    
-}
-function minusCount(){
-    count -=n;
-    showImage(count);
-
-}
- ("#bn1").click(plusCount());
- ("#bn2").click(minusCount());
-
- **/
+	// form handling
+  $('form').submit(function(e){
+		e.preventDefault();
+		var formData = $('form').serializeArray();
+		$.ajax({
+			url: 'sirikisaikiran@gmail.com',
+			method: 'POST',
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				$('.remove').css('opacity', 0);	
+				$('#xout').css('opacity', 0);
+				$('#contact').attr("disabled", true);
+				$('#contact').text("SUBMITTED");
+				$('#form-messages').text("Thanks for the info, I'll be in touch shortly");
+				$('#form-messages').css('opacity', 1);	
+				setTimeout(function(){
+					$('#lightboxForm').modal('toggle');
+				}, 3000);
+			}
+		});
+  });
 
 });
