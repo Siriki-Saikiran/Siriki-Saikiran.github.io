@@ -62,4 +62,16 @@ sr.reveal('.project-container1',{ duration: 1000,delay:300,rotate: { x: 100, y: 
 sr.reveal('.project-container2',{ duration: 1000,delay:500,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
 
 
+$("#skilltree").hover(function(){
+	jQuery('.skillbar').each(function() {
+    jQuery(this).find('.skillbar-bar').animate({
+      width: jQuery(this).attr('data-percent')
+    }, 4000);
+  });
+
+	
+})
+
+
+
 });
