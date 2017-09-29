@@ -31,17 +31,8 @@ $(document).ready(function() {
      }, 600);
 	});
 
-	// animate project containers
-	var $projectContainer = $('.project-container');
-	$window.scroll(function(){
-		$projectContainer.each(function(){
-			//check if scrollheight is past threshold, and div has not been transitioned
-			if($(document.body).scrollTop() + $(window).height()*1.2 > ($(this).position().top + $(this).height()) && !$(this).hasClass('transitioned')){ 
-				$(this).transition('scale');
-				$(this).addClass('transitioned');
-			}
-		});
-	});
+	
+
 
 
 	// form handling
@@ -66,5 +57,9 @@ $(document).ready(function() {
 			}
 		});
   });
+  window.sr = ScrollReveal();
+sr.reveal('.project-container1',{ duration: 1000,delay:300,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
+sr.reveal('.project-container2',{ duration: 1000,delay:500,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
+
 
 });

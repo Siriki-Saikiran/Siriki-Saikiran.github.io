@@ -85,7 +85,7 @@ body {
 
 .parallax {
   height: 80vh;
-  background-image: url("images/main.jpg");
+  background-image: url("images/backcover.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -101,7 +101,15 @@ body {
 }
 
 /*each individual project container*/
-.project-container {
+.project-container1 {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 15px #888888;
+  margin-top: 2em; 
+  
+  border-radius: 10px;
+}
+.project-container2 {
   background-color: white;
   padding: 20px;
   box-shadow: 10px 10px 15px #888888;
@@ -110,11 +118,17 @@ body {
   border-radius: 10px;
 }
 
-.project-container img {
+.project-container1 img {
+  height: 26em;
+}
+.project-container2 img {
   height: 26em;
 }
 
-.project-container p, .project-container a {
+.project-container1 p, .project-container1 a {
+  line-height: 2.5;
+}
+.project-container2 p, .project-container2 a {
   line-height: 2.5;
 }
 
@@ -271,7 +285,11 @@ body {
     width: 100vw;
     margin: 0;
   }
-  .project-container img {
+  .project-container1 img {
+    height: 12em;
+    padding: 0;
+  }
+  .project-container2 img {
     height: 12em;
     padding: 0;
   }
@@ -304,7 +322,11 @@ body {
   .landing, .code-back {
     background-attachment: scroll;
   }
-  .project-container img {
+  .project-container1 img {
+    height: 12em;
+    padding: 0;
+  }
+  .project-container2 img {
     height: 12em;
     padding: 0;
   }
@@ -340,7 +362,11 @@ body {
   .landing, .code-back {
     background-attachment: scroll;
   }
-  .project-container img {
+  .project-container1 img {
+    height: 18em;
+    padding: 0;
+  }
+  .project-container2 img {
     height: 18em;
     padding: 0;
   }
@@ -360,7 +386,10 @@ body {
   #learn-more {
     margin-left: 45%;
   }
-  .project-container img {
+  .project-container1 img {
+    height: 20em;
+  }
+  .project-container2 img {
     height: 20em;
   }
   .footer {
@@ -379,7 +408,10 @@ body {
     width: 100vw;
     margin: 0;
   }
-  .project-container {
+  .project-container1 {
+    width: 95%;
+  }
+  .project-container2 {
     width: 95%;
   }
   .work-together {

@@ -86,7 +86,7 @@
         <div class="row text-center">
             <h3>My Projects</h3>
         </div>
-        <div class="container project-container" id="yelp-camp">
+        <div class="container project-container1" id="yelp-camp">
             <div class="row">
                 <img src="images/yelp.jpg" alt="" class="img-responsive col-md-7 col-sm-12 col-xs-12">
                 <div class="col-md-5 col-sm-12 col-xs-12">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="container project-container" id="city-builder">
+        <div class="container project-container2" id="city-builder">
             <div class="row">
                 <img src="images/citybuilder.png" alt="" class="img-responsive col-md-7 col-sm-12 col-xs-12">
                 <div class="col-md-5 col-sm-12 col-xs-12">
@@ -110,58 +110,72 @@
             </div>
         </div>
     </div>
-
+    <!-- <div class="container-fluid">
+        <div class="text-center">
+            <h3>My Projects</h3>
+        </div>
+        <div class="container">
+            <div id="project-container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="yelp.jpg" alt="Yelpcamp" class="img-responsive">
+                    </div>
+                    <div class="col-md-5">
+                        <h2 class="text-center">YelpCamp</h2>
+                        <h5 class=" text-center intro">Node App where users can explore campgrounds</h5>
+                        <p>To summarize the project, it is a CRUD app with Node, Express, Bootstrap and PassportJS while following the RESTful architecture. I'm using Mlab to host the database. </p>
+                        <a href="https://saikiran-yelpcamp.herokuapp.com" target="_blank">Deployed App</a>
+                        <a href="https://github.com/Siriki-Saikiran/YelpCamp" target="_blank" class="pull-right">Source code on Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- work together -->
-            <div class="container-fluid work-together text-center">
-                <div class="container">
-                    <h2>Work Together</h2>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                        <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center">I'm always up for a conversation and if you have an interesting project, please let me know so that we can collaborate.</p>                  
+    <div class="container-fluid work-together text-center">
+        <div class="container">
+            <h2>Work Together</h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center">I'm always up for a conversation and if you have an interesting project, please let me know so that we can collaborate.</p>
+            </div>
+            <button id="contact" data-toggle="modal" data-target="#lightboxForm">GET IN TOUCH</button>
+        </div>
+    </div>
+    <!-- form lightbox -->
+    <div class="modal fade" id="lightboxForm">
+        <button id="xout" class="pull-right" data-toggle="modal" data-target="#lightboxForm">X</button>
+        <div class="container lightbox-form">
+            <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 text-center form-container">
+                <h2 class="text-center remove" style="margin-bottom: 1em;">Just a few quick questions</h2>
+                <h2 class="text-center" style="margin-bottom: 1em;" id="form-messages"></h2>
+                <p class="remove">Tell me a bit about the vision of the project and elaborate a few more details on the tech stack. I will try to reply you ASAP</p>
+                <form id="ajax-contact" method="POST" action="sirikisaikiran@gmail.com" class="remove" data-toggle="validator">
+                    <div class="form-group row">
+                        <input type="text" class="form-control" name="name" placeholder="* Name" required>
+                        <div class="help-block with-errors"></div>
+                        <input type="email" class="form-control" name="email" placeholder="* Email" required>
+                        <div class="help-block with-errors"></div>
+                        <textarea class="form-control" rows="5" cols="80" name="info" placeholder="* Tell me a bit about your project, or what kind of developer you're looking to hire" required></textarea>
+                        <div class="help-block with-errors"></div>
+                        <button type="submit">SUBMIT</button>
                     </div>
-                    <button id="contact" data-toggle="modal" data-target="#lightboxForm">GET IN TOUCH</button>
-                </div>
+                </form>
+                <p class="remove">* Required</p>
             </div>
-
-
-            <!-- form lightbox -->
-            <div class="modal fade" id="lightboxForm">
-                <button id="xout" class="pull-right" data-toggle="modal" data-target="#lightboxForm">X</button>
-                <div class="container lightbox-form">
-                    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 text-center form-container">
-                        <h2 class="text-center remove" style="margin-bottom: 1em;">Just a few quick questions</h2>
-                        <h2 class="text-center" style="margin-bottom: 1em;" id="form-messages"></h2>
-                        <p class="remove">Tell me a bit about the vision of the project and elaborate a few more details on the tech stack. I will try to reply you ASAP</p>
-                        <form id="ajax-contact" method="POST" action="sirikisaikiran@gmail.com" class="remove" data-toggle="validator">
-                            <div class="form-group row">
-                                <input type="text" class="form-control" name="name" placeholder="* Name" required>
-                                <div class="help-block with-errors"></div>
-                                <input type="email" class="form-control" name="email" placeholder="* Email" required>
-                                <div class="help-block with-errors"></div>
-                                <textarea class="form-control" rows="5" cols="80" name="info" placeholder="* Tell me a bit about your project, or what kind of developer you're looking to hire" required></textarea>
-                                <div class="help-block with-errors"></div>
-                                <button type="submit">SUBMIT</button>
-                            </div>
-                        </form>
-                        <p class="remove">* Required</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid footer text-center">
-                <p>Created by me <i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
-                <div class="container-fluid">
-                    <a href="https://github.com/Siriki-Saikiran" class="icons"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/siriki-s-saikiran-296a22121/" class="icons"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                </div>
-            </div>
-     <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/components/transition.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+        </div>
+    </div>
+    <div class="container-fluid footer text-center">
+        <p>Created by me <i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
+        <div class="container-fluid">
+            <a href="https://github.com/Siriki-Saikiran" class="icons"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/siriki-s-saikiran-296a22121/" class="icons"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="myscript.js"></script>
 </body>
 
