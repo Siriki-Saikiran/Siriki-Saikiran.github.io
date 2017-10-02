@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
 	console.log('ready');
 	var $window = $(window);
 
@@ -74,4 +74,4 @@ $("#skilltree").hover(function(){
 
 
 
-});
+},false);
