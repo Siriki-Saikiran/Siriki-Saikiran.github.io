@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
   window.sr = ScrollReveal();
 sr.reveal('.project-container1',{ duration: 1000,delay:300,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
 sr.reveal('.project-container2',{ duration: 1000,delay:500,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
+sr.reveal('.project-container3',{ duration: 1000,delay:300,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
+sr.reveal('.project-container4',{ duration: 1000,delay:500,rotate: { x: 100, y: 0, z: 0 },viewfactor:1,scale: 0.8,origin:'left',reset:true});
 
 
 $("#skilltree").hover(function(){

@@ -117,6 +117,22 @@ body {
   
   border-radius: 10px;
 }
+.project-container3 {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 15px #888888;
+  margin-top: 2em; 
+  
+  border-radius: 10px;
+}
+.project-container4 {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 15px #888888;
+  margin-top: 2em; 
+  
+  border-radius: 10px;
+}
 
 .project-container1 img {
   height: 26em;
@@ -124,11 +140,23 @@ body {
 .project-container2 img {
   height: 26em;
 }
+.project-container3 img {
+  height: 26em;
+}
+.project-container4 img {
+  height: 26em;
+}
 
 .project-container1 p, .project-container1 a {
   line-height: 2.5;
 }
 .project-container2 p, .project-container2 a {
+  line-height: 2.5;
+}
+.project-container3 p, .project-container3 a {
+  line-height: 2.5;
+}
+.project-container4 p, .project-container4 a {
   line-height: 2.5;
 }
 
